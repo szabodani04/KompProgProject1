@@ -3,10 +3,12 @@ body
     background-color: black;
     background-image: url('background.jpg');
     color: white;
+    font-size: medium;
 }
 main
 {
     padding: 20px;
+    font-size: 18px;
 }
 h1
 {
@@ -19,4 +21,32 @@ h1
 select
 {
     color: black;
+}
+.nyil
+{
+    font-size: 18px;
+}
+.feladat
+{
+    color: transparent;
+    font-size: 1px;
+}
+.nyil
+{
+    color: white;
+    font-size: 18px;
+}
+.feladat:hover
+{
+    font-size: 18px;
+    transition: 0.3s;
+    color: white;
+}
+.arrow
+{
+    height: 50px;
+}
+#torzs
+{
+    width: 500px;
 }

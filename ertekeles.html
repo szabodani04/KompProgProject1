@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Információtechnológia – nyomtatók</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Információtechnológia - nyomtatók</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="tetel.html">Tétel</a></li>
+            <li class="active"><a href="ertekeles.html">Értékelés</a></li>
+          </ul>
+        </div>
+    </nav>
+    <head>
+        <h1>Értékelés</h1>
+    </head>
+    <main>
+        
+        <form>
+            <p><label for="fogalomismeret">Fogalmak ismerete:</label>
+            <select id="fogalomismeret" name="fogalomismeret">
+                <option value="0">nem megfelelő</option>
+                <option value="1">a fogalmak ismeretében kisebb tévedések fordulnak elő </option>
+                <option value="2">megfelelő</option>
+            </select></p>
+            <p><label for="fogalomdefinialas">Fogalmak definiálása, alkalmazása:</label>
+            <select id="fogalomdefinialas" name="fogalomdefinialas">
+                <option value="0">nem megfelelő</option>
+                <option value="1">alkalmazásában apró tévedések, hibák fordulnak elő</option>
+                <option value="2">teljes körű fogalommeghatározás és alkalmazá</option>
+            </select></p>
+            <p><label for="tartalom">Tartalmi kifejtés, elvek folyamatok ismerete: </label>
+            <select id="tartalom" name="tartalom">
+                <option value="0">a témakör egy pontját sem tudja kifejteni</option>
+                <option value="2">a témakör egy-két pontját tudja csak kifejteni</option>
+                <option value="4">a tétel egy pontja kivételével kifejti azt, de hiányosan</option>
+                <option value="6">a témakör minden pontját kifejti kisebb hiányossággal</option>
+                <option value="8">a témakör minden pontját jól kifejti</option>
+            </select></p>
+            <p><label for="elvek">Elvek, folyamatok alkalmazása: </label>
+            <select id="elvek" name="elvek">
+                <option value="0">a tételhez tartozó elveket, folyamatokat nem tudja alkalmazni</option>
+                <option value="1">a tételhez tartozó elveket, folyamatokat csak részben tudja alkalmazni</option>
+                <option value="2">a tételhez tartozó elveket, folyamatokat tudja alkalmazni</option>
+            </select></p>
+            <p><label for="osszefugg">Összefüggések értelmezése: </label>
+            <select id="osszefugg" name="osszefugg">
+                <option value="0">nem a megadott témáról beszél</option>
+                <option value="1">csak a témakör periférikus elemeire tér ki</option>
+                <option value="2">a témakör lényeges elemeit tárgyalja, de az összefüggések hiányosak</option>
+                <option value="4">a tárgyalt témakörben az összefüggéseket jól látja</option>
+            </select></p>
+            <p><input type="submit" onclick="Submit()" name="Küldés" id="kuld" value="Értékelés"></p>
+            <p id="eredmeny"></p>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
