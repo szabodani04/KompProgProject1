@@ -7,7 +7,7 @@ body
 }
 main
 {
-    padding: 20px;
+    padding: 40px;
     font-size: 18px;
 }
 h1
@@ -49,4 +49,10 @@ select
 #torzs
 {
     width: 500px;
+}
+#eredmeny{
+    font-size: 24px;
+}
+#erdemjegy{
+    font-size: 24px;
 }

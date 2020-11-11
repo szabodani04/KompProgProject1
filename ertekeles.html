@@ -26,7 +26,7 @@
         
         <form>
             <p><label for="fogalomismeret">Fogalmak ismerete:</label>
-            <select id="fogalomismeret" name="fogalomismeret">
+            <select id="fogalomismeret" name="fogalomismeret" onchange="myFunction()">
                 <option value="0">nem megfelelő</option>
                 <option value="1">a fogalmak ismeretében kisebb tévedések fordulnak elő </option>
                 <option value="2">megfelelő</option>
@@ -58,8 +58,40 @@
                 <option value="2">a témakör lényeges elemeit tárgyalja, de az összefüggések hiányosak</option>
                 <option value="4">a tárgyalt témakörben az összefüggéseket jól látja</option>
             </select></p>
-            <p><input type="submit" onclick="Submit()" name="Küldés" id="kuld" value="Értékelés"></p>
+            <h2>Felépítés:</h2>
+            <p><label for="idobeosztas">Összefüggések értelmezése: </label>
+            <select id="idobeosztas" name="idobeosztas">
+                <option value="0">jelentős időzavarba kerül, elvész a részletekben</option>
+                <option value="1">feleletével kicsúszik az időkeretből, vagy túlságosan besűríti mondanivalóját</option>
+                <option value="2">látja a súlypontokat, de nem fejti ki eléggé a mondanivalóját</option>
+                <option value="3">logikusan felépített felelet, kihasználja az időkeretet</option>
+            </select></p>
+            <p><label for="felepitettseg">Időbeosztás: </label>
+            <select id="felepitettseg" name="felepitettseg">
+                <option value="0">nincs érdemi felelet</option>
+                <option value="1">a felelet zavaros, nem felépített</option>
+                <option value="2">a felelet felépített, de egy-két gondolati törés van benne</option>
+                <option value="3">a felelet jól felépített</option>
+            </select></p>
+            <h2>Előadás, szaknyelv</h2>
+            <p><label for="eloadas">Előadás: </label>
+            <select id="eloadas" name="eloadas">
+                <option value="0">nincs érdemi felelet</option>
+                <option value="1">pontatlan, zavaros előadásmód</option>
+                <option value="2">kisebb bizonytalansággal történő előadásmód</option>
+                <option value="3">egyértelmű, követhető előadásmód</option>
+            </select></p>
+            <p><label for="szaknyelv">Szaknyelv: </label>
+            <select id="szaknyelv" name="szaknyelv">
+                <option value="0">felületes, pontatlan, szakszerűtlen</option>
+                <option value="1">pontatlan, de jelzésre javít </option>
+                <option value="2">pontatlan, de önállóan javít</option>
+                <option value="3">pontos, szakszerű </option>
+            </select></p>
+            <button type="button" onclick="Submit()">Értékelés</button>
+            <!--<p><button type="button" onclick="Submit()" name="Küldés" id="kuld" value="Értékelés">Értékelés</button></p>-->
             <p id="eredmeny"></p>
+            <p id="erdemjegy"></p>
         </form>
     </main>
     <footer>
