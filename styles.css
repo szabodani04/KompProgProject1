@@ -4,16 +4,19 @@ body
     background-image: url('background.jpg');
     color: white;
 }
-#fej
+main
 {
-    width: 550px;
-    margin: auto;
-    height: 120px;
-    border: 2px white solid;
-    background-color: rgba(186, 186, 186, 0.2);
-    padding: 7px;
+    padding: 20px;
 }
 h1
 {
     text-align: center;
+}
+.behuzott
+{
+    text-emphasis: inherit;
+}
+select
+{
+    color: black;
 }
