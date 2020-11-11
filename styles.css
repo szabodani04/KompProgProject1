@@ -7,12 +7,20 @@ body
 }
 main
 {
-    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
     font-size: 18px;
 }
 h1
 {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+h2
+{
+    margin: 0px;
 }
 .behuzott
 {
@@ -55,4 +63,28 @@ select
 }
 #erdemjegy{
     font-size: 24px;
+}
+footer{
+    text-align: center;
+}
+.navbar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    background-color:rgb(25,25,25);
+    width: 100%;
+    padding: 0px;
+}
+#orr
+{
+    height: 40px;
+    float: right;
+    padding-top: 5px;
 }

@@ -32,3 +32,6 @@ function Submit(){
         document.getElementById("erdemjegy").style.color = "lightgreen";
     }
 }
+function Orr(){
+    window.alert("Miért nyomtad meg az orrot?");
+}
