@@ -37,13 +37,74 @@ function Orr(){
 }
 function ErettsegiDone(){
     var magyari = parseInt(document.getElementById("magyari").value);
-    var mateki = document.getElementById("mateki").value;
-    var torii = document.getElementById("torii").value;
-    var nyelvi = document.getElementById("nyelvi").value;
-    var magyars = document.getElementById("magyars").value;
-    var mateks = document.getElementById("mateks").value;
-    var toris = document.getElementById("toris").value;
-    var nyelvs = document.getElementById("nyelvs").value;
+    var mateki = parseInt(document.getElementById("mateki").value);
+    var torii = parseInt(document.getElementById("torii").value);
+    var nyelvi = parseInt(document.getElementById("nyelvi").value);
+    var magyars = parseInt(document.getElementById("magyars").value);
+    var mateks = parseInt(document.getElementById("mateks").value);
+    var toris = parseInt(document.getElementById("toris").value);
+    var nyelvs = parseInt(document.getElementById("nyelvs").value);
+    var magyar = (magyari + magyars)/150*100;
+    var matek = (mateki +mateks)/150*100;
+    var tori = (torii + toris)/150*100;
+    var nyelv = (nyelvi + nyelvs)/150*100;
+    if(magyari<12 || magyars<12){
+        document.getElementById("magyar").innerHTML = "Magyar: 1 Elégtelen";
+    }
+    else if(magyar<30){
+        document.getElementById("magyar").innerHTML = "Magyar: 1 Elégtelen";
+    }else if(magyar<40){
+        document.getElementById("magyar").innerHTML = "Magyar: 2 Elégséges";
+    }else if(magyar<60){
+        document.getElementById("magyar").innerHTML = "Magyar: 3 Közepes";
+    }else if(magyar<80){
+        document.getElementById("magyar").innerHTML = "Magyar: 4 Jó";
+    }else{
+        document.getElementById("magyar").innerHTML = "Magyar: 5 Jeles";
+    }
 
-    document.getElementById("asd").innerHTML = "asd";
+    if(mateki<12 || mateks<12){
+        document.getElementById("matek").innerHTML = "Matematika: 1 Elégtelen";
+    }
+    else if(matek<30){
+        document.getElementById("matek").innerHTML = "Matematika: 1 Elégtelen";
+    }else if(matek<40){
+        document.getElementById("matek").innerHTML = "Matematika: 2 Elégséges";
+    }else if(matek<60){
+        document.getElementById("matek").innerHTML = "Matematika: 3 Közepes";
+    }else if(matek<80){
+        document.getElementById("matek").innerHTML = "Matematika: 4 Jó";
+    }else{
+        document.getElementById("matek").innerHTML = "Matematika: 5 Jeles";
+    }
+
+    if(torii<12 || toris<12){
+        document.getElementById("tori").innerHTML = "Történelem: 1 Elégtelen";
+    }
+    else if(tori<30){
+        document.getElementById("tori").innerHTML = "Történelem: 1 Elégtelen";
+    }else if(tori<40){
+        document.getElementById("tori").innerHTML = "Történelem: 2 Elégséges";
+    }else if(tori<60){
+        document.getElementById("tori").innerHTML = "Történelem: 3 Közepes";
+    }else if(tori<80){
+        document.getElementById("tori").innerHTML = "Történelem: 4 Jó";
+    }else{
+        document.getElementById("tori").innerHTML = "Történelem: 5 Jeles";
+    }
+
+    if(nyelvi<12 || nyelvs<12){
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 1 Elégtelen";
+    }
+    else if(nyelv<30){
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 1 Elégtelen";
+    }else if(nyelv<40){
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 2 Elégséges";
+    }else if(nyelv<60){
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 3 Közepes";
+    }else if(nyelv<80){
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 4 Jó";
+    }else{
+        document.getElementById("nyelv").innerHTML = "Idegennyelv: 5 Jeles";
+    }
 }

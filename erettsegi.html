@@ -16,8 +16,8 @@
           <ul class="nav navbar-nav">
             <li><a href="tetel.html">Tétel</a></li>
             <li><a href="ertekeles.html">Értékelés</a></li>
+            <li class="active"><a href="erettsegi.html">Érettségi</a></li>
           </ul>
-          <img src="orr.png" onclick="Orr()" id="orr">
         </div>
         
     </nav>
@@ -25,7 +25,7 @@
         <h1>Érettségi értékelése</h1>
     </head>
     <main>
-    <form>
+    <form onsubmit="return false">
         <table  class="table">
             <thead>
                 <tr>
@@ -37,29 +37,33 @@
             <tbody>
                 <tr>
                     <td>magyar nyelv és irodalom: </td>
-                    <td><input type="number" min="0" max="100" id="magyari" oninput="Magyar()"></td>
+                    <td><input type="number" min="0" max="100" id="magyari" onchange="Magyar()"></td>
                     <td><input type="number" min="0" max="50" id="magyars"></td>
                 </tr>
                 <tr>
                     <td>matematika: </td>
-                    <td><input type="number" min="0" max="100" id="mateki"></td>
+                    <td><input type="number" min="0" max="100" id="mateki" onchange="Matek()"></td>
                     <td><input type="number" min="0" max="50" id="mateks"></td>
                 </tr>
                 <tr>
                     <td>történelem: </td>
-                    <td><input type="number" min="0" max="90" id="törii"></td>
-                    <td><input type="number" min="0" max="60" id="töris"></td>
+                    <td><input type="number" min="0" max="90" id="torii" onchange="Tori()"></td>
+                    <td><input type="number" min="0" max="60" id="toris"></td>
                 </tr>
                 <tr>
                     <td>idegen nyelv: </td>
-                    <td><input type="number" min="0" max="117" id="nyelvi"></td>
+                    <td><input type="number" min="0" max="117" id="nyelvi" onchange="Nyelv()"></td>
                     <td><input type="number" min="0" max="33" id="nyelvs"></td>
                 </tr>
             </tbody>
         </table>
         <button onclick="ErettsegiDone()" id="gomb">Értékelés</button>
-        <span id="asd"></span>
+        <p id="magyar"></p>
+        <p id="matek"></p>
+        <p id="tori"></p>
+        <p id="nyelv"></p>
     </form>
+
     </main>
     <footer>
         <p>Szabó Dániel Márk &copy Minden jog fenntartva.</p>
