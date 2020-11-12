@@ -108,3 +108,7 @@ function ErettsegiDone(){
         document.getElementById("nyelv").innerHTML = "Idegennyelv: 5 Jeles";
     }
 }
+
+function Magyar(){
+    
+}
