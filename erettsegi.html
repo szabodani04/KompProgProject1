@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Információtechnológia – nyomtatók</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Információtechnológia - nyomtatók</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="tetel.html">Tétel</a></li>
+            <li><a href="ertekeles.html">Értékelés</a></li>
+          </ul>
+          <img src="orr.png" onclick="Orr()" id="orr">
+        </div>
+        
+    </nav>
+    <head>
+        <h1>Érettségi értékelése</h1>
+    </head>
+    <main>
+    <form>
+        <table  class="table">
+            <thead>
+                <tr>
+                    <td>Középszintű vizsga</td>
+                    <td>Írásbeli</td>
+                    <td>Szóbeli</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>magyar nyelv és irodalom: </td>
+                    <td><input type="number" min="0" max="100" id="magyari" oninput="Magyar()"></td>
+                    <td><input type="number" min="0" max="50" id="magyars"></td>
+                </tr>
+                <tr>
+                    <td>matematika: </td>
+                    <td><input type="number" min="0" max="100" id="mateki"></td>
+                    <td><input type="number" min="0" max="50" id="mateks"></td>
+                </tr>
+                <tr>
+                    <td>történelem: </td>
+                    <td><input type="number" min="0" max="90" id="törii"></td>
+                    <td><input type="number" min="0" max="60" id="töris"></td>
+                </tr>
+                <tr>
+                    <td>idegen nyelv: </td>
+                    <td><input type="number" min="0" max="117" id="nyelvi"></td>
+                    <td><input type="number" min="0" max="33" id="nyelvs"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="ErettsegiDone()" id="gomb">Értékelés</button>
+        <span id="asd"></span>
+    </form>
+    </main>
+    <footer>
+        <p>Szabó Dániel Márk &copy Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
