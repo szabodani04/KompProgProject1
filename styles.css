@@ -4,6 +4,8 @@ body
     background-image: url('background.jpg');
     color: white;
     font-size: medium;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 main
 {
@@ -92,4 +94,18 @@ footer
 #gomb
 {
     background-color: black;
+}
+#laserprinter
+{
+    float: left;
+    width: 20%;
+    min-width: 300px;
+    padding-right: 40px;
+
+}
+#kepkeret
+{
+    padding: 20px;
+    padding-bottom: 100px;
+    width: 100%;
 }
