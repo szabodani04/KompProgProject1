@@ -36,7 +36,7 @@ function Orr(){
     window.alert("Miért nyomtad meg az orrot?");
 }
 function ErettsegiDone(){
-    var magyari = document.getElementById("magyari").value;
+    var magyari = parseInt(document.getElementById("magyari").value);
     var mateki = document.getElementById("mateki").value;
     var torii = document.getElementById("torii").value;
     var nyelvi = document.getElementById("nyelvi").value;
@@ -45,5 +45,5 @@ function ErettsegiDone(){
     var toris = document.getElementById("toris").value;
     var nyelvs = document.getElementById("nyelvs").value;
 
-    document.getElementById("asd").innerHTML = magyari;
+    document.getElementById("asd").innerHTML = "asd";
 }
